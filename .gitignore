@@ -1,0 +1,34 @@
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Distribution / build
+dist/
+build/
+*.egg-info/
+.tox/
+
+# Operating System files
+.DS_Store
+
+# PyCharm specific files
+.idea/
+
+# Environment variables / sensitive files (Sehr wichtig!)
+.env # Wenn du eine .env Datei für Konfigurationen hast
+config.py # Wenn sensible Daten hier gespeichert sind (pass ggf. den Namen an)
+*.sqlite # Wenn deine Datenbankdatei hier liegt (pass ggf. den Namen an)
+db_backup/ # Wenn du Datenbank-Backups in diesem Ordner speicherst
+logs/ # Wenn du Logdateien in diesem Ordner speicherst
+
+# Frontend build artifacts (falls du ein separates Frontend hast)
+backend/app/static/build/
+backend/app/static/frontend_build/
+
+# Alembic specific (falls du das init neu machen müsstest)
+migrations/versions/ # Die Skripte selbst willst du wahrscheinlich behalten, aber vielleicht keine bestimmten Build-Artefakte innerhalb
